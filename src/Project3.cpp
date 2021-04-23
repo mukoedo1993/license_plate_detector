@@ -12,7 +12,7 @@ using namespace std;
 int main(int argc, char **argv) {
 
 if(argc<2)
-  throw std::invalid_argument("Please provide file in the form ./Project3 <file>");
+  throw std::invalid_argument("Please provide file in the form ./Project3 <CSS file>");
 Mat img;
 VideoCapture cap(0);
 
