@@ -1,5 +1,8 @@
-# plate_detector
+# License Plate Detector #
 To detect the nameplate of cars.
+
+Step0:
+Ubantu20.04, opencv C++ lib.,  g++ and webcam required.
 
 Step1:
 Run:
