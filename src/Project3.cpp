@@ -3,19 +3,23 @@
 #include <opencv2/imgproc.hpp>
 #include <opencv2/objdetect.hpp>
 #include <iostream>
-
+#include <stdexcept>
 using namespace cv;
 using namespace std;
 
 /////////////// Project 3 – License Plate Detector //////////////////////
 
-int main() {
+int main(int argc, char **argv) {
 
+if(argc<2)
+  throw std::invalid_argument("Please provide file in the form ./Project3 <file>");
 Mat img;
 VideoCapture cap(0);
 
 CascadeClassifier plateCascade;
-plateCascade.load("Resources/haarcascade_russian_plate_number.xml");
+//I personally use plateCascade.load("Resources/haarcascade_russian_plate_number.xml");
+  plateCascade.load(argv[1]);
+
 
 if (plateCascade.empty()) { cout << "XML file not loaded" << endl; }
 
