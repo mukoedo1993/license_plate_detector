@@ -20,4 +20,4 @@ Run:
 ```
 cd Plates
 ```
-Then you could check the resulting detected license plates/
+Then you could check the resulting detected license at the director `plates/`
