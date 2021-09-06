@@ -20,4 +20,4 @@ Run:
 ```
 cd Plates
 ```
-Then you could check the resulting detected license at the director `plates/`
+Then you could check the resulting detected license at the directory `plates/`
